@@ -3,6 +3,42 @@
   --foreground: #171717;
 }
 
+@font-face {
+    font-family: 'NixieOne';
+    src: url('/font/NixieOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NicoMoji'; 
+    src: url('/font/NicoMoji-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'KeaniaOne'; 
+    src: url('/font/KeaniaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NixieOne'; 
+    src: url('/font/NixieOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Josefin-Bold'; 
+    src: url('/font/josefin/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Josefin-Light'; 
+    src: url('/font/josefin/JosefinSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Josefin-Medium'; 
+    src: url('/font/josefin/JosefinSans-Medium.ttf');
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
