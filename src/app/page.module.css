@@ -1,13 +1,23 @@
-.banner {
-  position: absolute;
+.bannerContainer {
+  position: relative;
   width: 100%;
   height: 90vh;
-  margin: 0;
+}
+
+.bannerContainer .bannerText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   text-align: center;
   align-content: center;
+}
+
+.bannerContainer .bannerVideo {
+  width: 100%;
+  height: 100%;
 }
 
 .bannerTitle {
@@ -37,13 +47,6 @@
   height: auto;
   width: 100%;
 
-}
-
-.video {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 89vh;
 }
 
 .newYearSection {
@@ -84,4 +87,88 @@
   margin-top: 1rem;
   font-family: 'Josefin-Light', sans-serif;
   font-size: 1.2rem;
+}
+
+.newsSection {
+  margin: 40px 2% 40px 2%;
+}
+
+.newsTitle {
+  margin-bottom: 40px;
+  font-family: 'Josefin-Medium', sans-serif;
+  font-size: 2.5rem;
+}
+
+.newsContainer {
+  width: 100%;
+  height: auto;
+  margin: 0 0 80px 0;
+}
+
+.news {
+  margin: 0 4% 0 4%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsElement {
+  position: relative;
+  flex: 25;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.newsImage:hover {
+  box-shadow: 0 0 25px rgba(200, 100, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.newsElement .newsTag {
+  font-family: 'Josefin-Medium', sans-serif;
+  position: absolute;
+  z-index: 3;
+  background-color: #151515;
+  width: 70%;
+  text-align: center;
+  align-content: center;
+  height: 20%;
+  font-size: 1.7rem;
+  border-radius: 5rem;
+  margin-left: 15%;
+  margin-top: 70%;
+  box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+}
+
+.newsImage {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border-radius: 3rem;
+  box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.newsImage img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.newsImage .newsImageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
