@@ -99,6 +99,69 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <div>
+                <div>
+                    <div>
+                        <span>I partner di Science Night</span>
+                        <span>del 2018</span>
+                    </div>
+                    <div>
+                        <a href="#" className="button-glow">
+                            DIVENTA PARTNER
+                            <img src={"/img/btn.svg"} alt={""}/>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <span>Un'idea di un piccolo gruppo</span>
+                </div>
+                <div>
+                    <div>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="#" className="button-glow">
+                                LEGGI LA STORIA
+                                <img src={"/img/btn.svg"} alt={""}/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <span>Il meglio delle edizioni precedenti</span>
+                </div>
+                <div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <a href="#" className="button-glow">
+                            TUTTE LE FOTO
+                            <img src={"/img/btn.svg"} alt={""}/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <Footer />
     </div>
