@@ -3,6 +3,17 @@ import css from "./page.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Countdown from '@/code/countdown';
+import SponsorCarousel from '@/components/sponsor';
+
+const SLIDES = [
+    '/img/testimg.png',
+    '/img/testimg.png',
+    '/img/testimg.png',
+    '/img/testimg.png',
+    '/img/testimg.png'
+];
+
+const slides2 = Array.from(SLIDES).reverse();
 
 export default function Home() {
   return (
@@ -100,11 +111,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <div>
+            <div className={css.partnerSection}>
+                <div className={css.partnerTitleContainer}>
+                    <div className={css.partnerTitle}>
                         <span>I partner di Science Night</span>
-                        <span>del 2018</span>
+                        <div className={css.partnerYearContainer}>
+                            <span className={css.partnerYear}>del 2018</span>
+                        </div>
                     </div>
                     <div>
                         <a href="#" className="button-glow">
@@ -113,12 +126,12 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className={css.sponsorCarousels}>
                     <div>
-
+                        <SponsorCarousel slides={SLIDES} options={{loop: true}} />
                     </div>
                     <div>
-
+                        <SponsorCarousel slides={slides2} options={{direction: "rtl",loop: true}}/>
                     </div>
                 </div>
             </div>
