@@ -5,15 +5,25 @@ import Footer from "@/components/footer";
 import Countdown from '@/code/countdown';
 import SponsorCarousel from '@/components/sponsor';
 
+const folder = '/img/sponsor/2018/';
+
 const SLIDES = [
-    '/img/testimg.png',
-    '/img/testimg.png',
-    '/img/testimg.png',
-    '/img/testimg.png',
-    '/img/testimg.png'
+    folder + 'sponsor_2018_agsm.jpg',
+    folder + 'sponsor_2018_benetti.jpg',
+    folder + 'sponsor_2018_cantinavalpantena.jpg',
+    folder + 'sponsor_2018_casadeltrattore.jpg',
+    folder + 'sponsor_2018_foodora.jpg',
+    folder + 'sponsor_2018_fusushi.jpg',
+    folder + 'sponsor_2018_inkaddiction.jpg',
+    folder + 'sponsor_2018_labottega.jpg',
+    folder + 'sponsor_2018_lanuovatecnica.jpg',
+    folder + 'sponsor_2018_lasuite.jpg',
+    folder + 'sponsor_2018_porgilaltrapancia.jpg',
+    folder + 'sponsor_2018_tgella.jpg'
 ];
 
-const slides2 = Array.from(SLIDES).reverse();
+const slides1 = SLIDES.slice(0, SLIDES.length / 2);
+const slides2 = SLIDES.slice(SLIDES.length / 2, SLIDES.length);
 
 export default function Home() {
   return (
@@ -128,7 +138,7 @@ export default function Home() {
                 </div>
                 <div className={css.sponsorCarousels}>
                     <div>
-                        <SponsorCarousel slides={SLIDES} options={{loop: true}} />
+                        <SponsorCarousel slides={slides1} options={{loop: true}} />
                     </div>
                     <div>
                         <SponsorCarousel slides={slides2} options={{direction: "rtl",loop: true}}/>
@@ -136,26 +146,42 @@ export default function Home() {
                 </div>
             </div>
 
-            <div>
-                <div>
+            <div className={css.storySection}>
+                <div className={css.storyTitle}>
                     <span>Un'idea di un piccolo gruppo</span>
                 </div>
-                <div>
-                    <div>
+                <div className={css.storyContainer}>
+                    <div className={css.storyText}>
+                        <div className={css.storyDescription}>
+                            <p>
+                                Il 19 giugno 2009 viene organizzata per la prima volta la "Festa a scienze".
+                                Quell'anno accademico (2008-2009) era stato segnato dal D.L. Gelmini che
+                                spinse molti studenti a mobilitarsi a seguito della riforma universitaria.
+                                Tra questi anche Wudy, al secolo Walter Riviera, che in quell'anno venne eletto
+                                (per la prima volta) come rappresentante della facoltà di Scienze MM.FF.NN.
+                                Sin dall'inizio della sua esperienza da rappresentante si trovò a fronteggiare un
+                                problema ben noto a molte università italiane: la diffidenza ed il clima
+                                freddo dell'ambiente universitario
+                            </p>
+                            <div className={css.readStoryButton}>
+                                <a href="#" className="button-glow">
+                                    LEGGI LA STORIA
+                                    <img src={"/img/btn.svg"} alt={""}/>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <a href="#" className="button-glow">
-                                LEGGI LA STORIA
-                                <img src={"/img/btn.svg"} alt={""}/>
-                            </a>
+                    <div className={css.storyImageContainer}>
+                        <div className={css.storyImage}>
+                            <img src={"/img/story.jpg"} alt={"story"}/>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <div>
+            <div className={css.photosSection}>
+                <div className={css.photosTitle}>
                     <span>Il meglio delle edizioni precedenti</span>
                 </div>
                 <div>

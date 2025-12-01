@@ -15,7 +15,7 @@ type PropType = {
 const SponsorCarousel: React.FC<PropType> = (props) => {
     const { slides, options } = props
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-        AutoScroll({ playOnInit: true, stopOnInteraction: false, startDelay: 0, speed: 2 }),
+        AutoScroll({ playOnInit: true, stopOnInteraction: false, startDelay: 0, speed: 1 }),
     ])
     const [isPlaying, setIsPlaying] = useState(false)
 
@@ -37,12 +37,12 @@ const SponsorCarousel: React.FC<PropType> = (props) => {
     )
 
     return (
-        <div className={css.embla} dir={options?.direction}>
-            <div className={css.embla__viewport} ref={emblaRef}>
-                <div className={css.embla__container}>
+        <div className={css.sponsor} dir={options?.direction}>
+            <div className={css.sponsorViewport} ref={emblaRef}>
+                <div className={css.sponsorContainer}>
                     {slides.map((slide, index) => (
-                        <div className={css.embla__slide} key={index}>
-                            <div className={css.embla__slide__number}>
+                        <div className={css.sponsorSlide} key={index}>
+                            <div className={css.sponsorSlideInner}>
                                 <img src={slide} alt={"sponsor"}/>
                             </div>
                         </div>
