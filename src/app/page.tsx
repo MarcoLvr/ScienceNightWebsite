@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Countdown from '@/code/countdown';
 import SponsorCarousel from '@/components/sponsor';
+import PhotosCarousel from '@/components/photos';
 
 const folder = '/img/sponsor/2018/';
 
@@ -186,12 +187,9 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-
+                        <PhotosCarousel slides={[{text: "2017", url: "2017.jpg"}, {text: "2016", url: "2016.jpg"}, {text: "2015", url: "2015.jpg"}, {text: "2014", url: "2014.jpg"}, {text: "2013", url: "2013.jpg"}, {text: "2012", url: "2012.jpg"}]} />
                     </div>
-                    <div>
-
-                    </div>
-                    <div>
+                    <div className={css.photosButtonContainer}>
                         <a href="#" className="button-glow">
                             TUTTE LE FOTO
                             <img src={"/img/btn.svg"} alt={""}/>
