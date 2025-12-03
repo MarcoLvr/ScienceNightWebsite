@@ -11,50 +11,50 @@ export default function Footer(){
                     <div className={css.footerSection}>
                         <div className={css.miniSection}>
                             <h3>CONTATTI</h3>
-                            <div>
-                                <p>Per informazioni - info@sciencenight.it</p>
-                                <p>Per richieste commerciali - sales@sciencenight.it</p>
+                            <div className={css.contacts}>
+                                <p>Per informazioni - <a href={"mailto:info@sciencenight.it"}>info@sciencenight.it</a></p>
+                                <p>Per richieste commerciali - <a href={"mailto:sales@sciencenight.it"}>sales@sciencenight.it</a></p>
                             </div>
-                            <p>Ca’ Vignal 2 - Str. Le Grazie 15, 37134 VR</p>
+                            <p className={css.address}>Ca’ Vignal 2 - Str. Le Grazie 15, 37134 VR</p>
                         </div>
-                        <div className={css.miniSection}>
+                        <div className={css.miniSection2}>
                             <h3>LINK UTILI</h3>
-                            <a>Entra nello staff</a>
-                            <a>Privacy Policy</a>
+                            <div className={css.usefulLinks}>
+                                <a>Entra nello staff</a>
+                                <a>Privacy Policy</a>
+                            </div>
+
                         </div>
                     </div>
                     <div className={css.footerSection}>
-                        <div className={css.miniSection}>
+                        <div className={css.miniSectionSocial}>
                             <h3>SOCIAL SCIENCE NIGHT</h3>
-                            <div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
+                            <div className={css.socials}>
+                                <a href={""}>
+                                    <img src={"img/icons/instagram.svg"} />
+                                </a>
+                                <a href={""}>
+                                    <img src={"img/icons/tiktok.svg"} />
+                                </a>
+                                <a href={""}>
+                                    <img src={"img/icons/youtube.svg"} />
+                                </a>
                             </div>
                         </div>
-                        <div className={css.miniSection}>
+                        <div className={css.miniSectionSocial}>
                             <h3>SOCIAL DEBUG</h3>
-                            <div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
+                            <div className={css.socials}>
+                                <a href={""}>
+                                    <img src={"img/icons/instagram.svg"} />
+                                </a>
+                                <a href={""}>
+                                    <img src={"img/icons/tiktok.svg"} />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={css.copyright}>
                     <p>© 2025 Debug Univr</p>
                 </div>
             </div>
