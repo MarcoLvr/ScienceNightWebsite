@@ -26,6 +26,7 @@
     font-size: 5rem;
     font-weight: normal;
     transition: 0.5s;
+    margin: 0 5% 0 5%;
 }
 
 .bannerCountdown {
@@ -241,6 +242,7 @@
     font-family: 'Josefin-Medium', sans-serif;
     font-size: 2.5rem;
     display: flex;
+    margin-bottom: 2%;
 }
 
 .storyContainer {
@@ -248,46 +250,57 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .storyImageContainer {
+    margin-top: auto;
+    margin-bottom: auto;
     flex: 50;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+
 }
 
 .storyImage {
     border-radius: 2rem;
     overflow: hidden;
     width: 70%;
-    height: auto;
-
+    height: 70%;
+    aspect-ratio: 4/3;
+    margin: 5%;
 }
 
 .storyImage img {
     object-fit: cover;
     overflow: hidden;
     width: 100%;
+    height: 100%;
     aspect-ratio: 4/3;
 }
 
 .storyText {
     flex: 60;
+    display: flex;
+    gap: 2rem;
     width: 100%;
-    margin: 2% 0 2% 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
 }
 
 .storyDescription {
+    overflow: hidden;
+    height: 100%;
     font-family: 'Josefin-Light', sans-serif;
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     justify-content: space-around;
+    transition: 0.5s;
 }
 
 .readStoryButton {
@@ -315,12 +328,32 @@
     .newsElement {
         flex: 40%;
     }
+
+
+    .storyDescription {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
     .newYearDesc h1 {
         font-size: 3rem;
         font-weight: normal;
+    }
+
+
+    .storyContainer {
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+
+    .storyImage {
+        width: 100%;
+    }
+
+    .storyDescription {
+        font-size: 1.3rem;
+
     }
 }
 
@@ -337,7 +370,14 @@
 
 @media screen and (max-width: 800px) {
     .bannerTitle {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    .newYearDesc h1 {
+        font-size: 3rem;
+    }
+
+    .newYearSection {
+        padding: 2% 5% 3% 5%;
     }
 
     .bannerCountdown {

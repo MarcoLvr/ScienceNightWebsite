@@ -118,3 +118,34 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 800px) {
+
+    .footer {
+        margin-top: 100px;
+        height: 40rem;
+
+    }
+
+    .footerContainer {
+
+    }
+
+    .footerSectionContainer {
+        margin-top: 0;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .miniSection {
+        margin: 0;
+    }
+
+    .footerSection {
+        margin: 0;
+        text-align: center;
+        flex: 40;
+        justify-content: space-around;
+    }
+}

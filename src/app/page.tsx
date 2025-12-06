@@ -170,13 +170,12 @@ export default function Home() {
                                 problema ben noto a molte università italiane: la diffidenza ed il clima
                                 freddo dell'ambiente universitario
                             </p>
-                            <div className={css.readStoryButton}>
-                                <a href="#" className="button-glow">
-                                    LEGGI LA STORIA
-                                    <img src={"/img/btn.svg"} alt={""}/>
-                                </a>
-                            </div>
-
+                        </div>
+                        <div className={css.readStoryButton}>
+                            <a href="#" className="button-glow">
+                                LEGGI LA STORIA
+                                <img src={"/img/btn.svg"} alt={""}/>
+                            </a>
                         </div>
                     </div>
                     <div className={css.storyImageContainer}>
