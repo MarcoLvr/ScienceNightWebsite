@@ -58,7 +58,7 @@
     font-size: 1.7rem;
     border-radius: 5rem;
     margin-top: 25%;
-    box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+    box-shadow: 0 0 20px rgba(75, 56, 74, 1);
 }
 
 .photoSlideContainer .photoSlideOverlay {
@@ -102,6 +102,8 @@
     height: 10%;
     border-radius: 30px;
     background-color: rgba(151, 151, 151, 1);
+    transition: 0.2s;
+
 }
 
 .embla__dot:after {
@@ -116,6 +118,7 @@
 
 .embla__dot__selected .dotAesthetic {
     background-color: white;
+    transition: 0.2s;
 }
 
 .embla__dot__selected:after {

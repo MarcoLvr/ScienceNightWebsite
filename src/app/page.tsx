@@ -130,7 +130,7 @@ export default function Home() {
                             <span className={css.partnerYear}>del 2018</span>
                         </div>
                     </div>
-                    <div>
+                    <div className={css.becomePartner}>
                         <a href="#" className="button-glow">
                             DIVENTA PARTNER
                             <img src={"/img/btn.svg"} alt={""}/>
@@ -144,6 +144,12 @@ export default function Home() {
                     <div>
                         <SponsorCarousel slides={slides2} options={{direction: "rtl",loop: true}}/>
                     </div>
+                </div>
+                <div className={css.becomePartnerBottom}>
+                    <a href="#" className="button-glow">
+                        DIVENTA PARTNER
+                        <img src={"/img/btn.svg"} alt={""}/>
+                    </a>
                 </div>
             </div>
 

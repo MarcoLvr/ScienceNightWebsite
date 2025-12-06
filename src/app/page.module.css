@@ -1,180 +1,191 @@
+
 .bannerContainer {
-  position: relative;
-  width: 100%;
-  height: 90vh;
+    position: relative;
+    width: 100%;
+    height: 90vh;
 }
 
 .bannerContainer .bannerText {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  text-align: center;
-  align-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-align: center;
+    align-content: center;
 }
 
 .bannerContainer .bannerVideo {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .bannerTitle {
-  font-family: 'NixieOne', sans-serif;
-  font-size: 5rem;
-  font-weight: normal;
+    font-family: 'NixieOne', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    transition: 0.5s;
 }
 
 .bannerCountdown {
-  margin-top: 1rem;
-  font-family: 'KeaniaOne', sans-serif;
-  font-size: 4rem;
-  font-weight: normal;
+    margin-top: 1rem;
+    font-family: 'KeaniaOne', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    transition: 0.5s;
+
 }
 
 .bannerShadowContainer {
-  position: absolute;
-  height: 91vh;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-  align-content: end;
+    position: absolute;
+    height: 91vh;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    align-content: end;
 }
 
 .bannerShadow {
-  object-fit: cover;
-  height: auto;
-  width: 100%;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
 
 }
 
 .newYearSection {
-  background-color: #090909;
-  width: 100%;
-  height: 500px;
-  padding: 2% 15% 3% 15%;
+    background-color: #090909;
+    width: 100%;
+    height: auto;
+    padding: 2% 15% 3% 15%;
 }
 
 .newYearContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+    transition: 0.5s;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .newYearDesc {
-  width: 100%;
+    width: 100%;
 }
 
 .newYearBrand {
-  font-family: 'NicoMoji', sans-serif;
+    font-family: 'NicoMoji', sans-serif;
 }
 
 .newYearBrand h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .newYearDesc h1 {
-  font-family: 'NixieOne', sans-serif;
-  font-size: 4rem;
-  font-weight: normal;
+    font-family: 'NixieOne', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    transition: 0.5s;
 }
 
 .newYearDesc p {
-  margin-top: 1rem;
-  font-family: 'Josefin-Light', sans-serif;
-  font-size: 1.2rem;
+    margin-top: 1rem;
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 1.2rem;
 }
 
 .newsSection {
-  margin: 40px 2% 40px 2%;
+    margin: 40px 2% 40px 2%;
 }
 
 .newsTitle {
-  margin-bottom: 40px;
-  font-family: 'Josefin-Medium', sans-serif;
-  font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Josefin-Medium', sans-serif;
+    font-size: 2.5rem;
 }
 
 .newsContainer {
-  width: 100%;
-  height: auto;
-  margin: 0 0 80px 0;
+    width: 100%;
+    height: auto;
 }
 
 .news {
-  margin: 0 4% 0 4%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    margin: 0 4% 0 4%;
+    height: 100%;
+    width: auto;
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .newsElement {
-  position: relative;
-  flex: 25;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+    position: relative;
+    flex: 1 0 20%;
+    min-width: 250px;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
 
 }
 
 .newsImage:hover {
-  box-shadow: 0 0 25px rgba(200, 100, 255, 0.9);
-  transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(200, 100, 255, 0.9);
+    transform: translateY(-2px);
 }
 
 .newsElement .newsTag {
-  font-family: 'Josefin-Medium', sans-serif;
-  position: absolute;
-  z-index: 3;
-  background-color: #151515;
-  width: 70%;
-  text-align: center;
-  align-content: center;
-  height: 20%;
-  font-size: 1.7rem;
-  border-radius: 5rem;
-  margin-left: 15%;
-  margin-top: 70%;
-  box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+    font-family: 'Josefin-Medium', sans-serif;
+    position: absolute;
+    z-index: 3;
+    background-color: #151515;
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    height: 20%;
+    font-size: 1rem;
+    border-radius: 5rem;
+    margin-left: 15%;
+    margin-top: 70%;
+    box-shadow: 0 0 40px rgba(75, 56, 74, 1);
 }
 
 .newsImage {
-  position: relative;
-  width: 70%;
-  overflow: hidden;
-  aspect-ratio: 1/1;
-  border-radius: 3rem;
-  box-shadow: 0 0 40px rgba(75, 56, 74, 1);
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .newsImage img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .newsImage .newsImageOverlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .partnerSection {
-    margin: 150px 2% 40px 2%;
+    margin: 100px 2% 40px 2%;
 }
 
 .partnerTitleContainer {
@@ -193,6 +204,7 @@
 
 .partnerYearContainer {
     height: 100%;
+    min-width: 80px;
     align-content: end;
 }
 
@@ -200,6 +212,19 @@
     font-family: 'Josefin-Light', sans-serif;
     font-size: 1rem;
 
+}
+
+.becomePartner {
+    transition: 0.5s;
+
+}
+
+.becomePartnerBottom {
+    transition: 0.5s;
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
 }
 
 .sponsorCarousels {
@@ -227,7 +252,7 @@
 }
 
 .storyImageContainer {
-    flex: 40;
+    flex: 50;
     width: 100%;
     height: 100%;
     display: flex;
@@ -284,4 +309,38 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .newsElement {
+        flex: 40%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .newYearDesc h1 {
+        font-size: 3rem;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .becomePartner {
+        display: none;
+    }
+
+    .becomePartnerBottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bannerTitle {
+        font-size: 4rem;
+    }
+
+    .bannerCountdown {
+        font-size: 3rem;
+    }
 }

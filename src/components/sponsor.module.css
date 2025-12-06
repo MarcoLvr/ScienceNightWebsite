@@ -1,9 +1,9 @@
 .sponsor {
     max-width: 100%;
     margin: auto;
-    --slide-height: 5rem;
+    --slide-height: 80%;
     --slide-spacing: 1rem;
-    --slide-size: 33%;
+    --slide-size: 30vw;
 }
 .sponsorViewport {
     overflow: hidden;
@@ -22,8 +22,6 @@
 }
 .sponsorSlideInner {
     border-radius: 1.8rem;
-    font-size: 4rem;
-    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,4 +33,10 @@
 .sponsorSlideInner img{
     object-fit: cover;
     width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .sponsor {
+        --slide-size: 18rem;
+    }
 }
