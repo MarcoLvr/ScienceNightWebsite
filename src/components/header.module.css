@@ -33,6 +33,7 @@
 }
 
 .menu {
+    visibility: hidden;
     width: 120px;
     text-align: right;
     margin-right: 15px;
