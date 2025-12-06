@@ -69,7 +69,7 @@ export default function Home() {
                         a far risplendere l'evento più rinnomato dell'Università di Verona. Tic Tac, il tempo scorre. Preparati alla nuova edizione di Science Night!</p>
                     </div>
                     <div>
-                        <a href="#" className="button-glow">
+                        <a href="/comingsoon" className="button-glow">
                             ESPLORA ORA
                             <img src={"/img/btn.svg"} alt={""}/>
                         </a></div>
@@ -82,42 +82,24 @@ export default function Home() {
                 </div>
                 <div className={css.newsContainer}>
                     <div className={css.news}>
-                        <div className={css.newsElement}>
+                        <a href={"/comingsoon"} className={css.newsElement}>
                             <div className={css.newsTag}>
-                                <span>FOTO 2017</span>
+                                <span>SITO RINNOVATO</span>
                             </div>
                             <div className={css.newsImage}>
                                 <div className={css.newsImageOverlay}></div>
-                                <img src={"/img/testimg.png"}/>
+                                <img src={"/img/foto/eventi/homecoming25/wallpaper.jpg"}/>
                             </div>
-                        </div>
-                        <div className={css.newsElement}>
+                        </a>
+                        <a href={"https://www.youtube.com/watch?v=IHaE2CYc1n8"} target={"_blank"} rel={"noopener noreferrer"} className={css.newsElement}>
                             <div className={css.newsTag}>
-                                <span>FOTO 2017</span>
+                                <span>DEBUG HOMECOMING AFTERMOVIE</span>
                             </div>
                             <div className={css.newsImage}>
                                 <div className={css.newsImageOverlay}></div>
-                                <img src={"/img/testimg.png"}/>
+                                <img src={"/img/foto/eventi/homecoming25/wallpaper3.jpg"}/>
                             </div>
-                        </div>
-                        <div className={css.newsElement}>
-                            <div className={css.newsTag}>
-                                <span>FOTO 2017</span>
-                            </div>
-                            <div className={css.newsImage}>
-                                <div className={css.newsImageOverlay}></div>
-                                <img src={"/img/testimg.png"}/>
-                            </div>
-                        </div>
-                        <div className={css.newsElement}>
-                            <div className={css.newsTag}>
-                                <span>FOTO 2017</span>
-                            </div>
-                            <div className={css.newsImage}>
-                                <div className={css.newsImageOverlay}></div>
-                                <img src={"/img/testimg.png"}/>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -131,7 +113,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={css.becomePartner}>
-                        <a href="#" className="button-glow">
+                        <a href="/comingsoon" className="button-glow">
                             DIVENTA PARTNER
                             <img src={"/img/btn.svg"} alt={""}/>
                         </a>
@@ -146,7 +128,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={css.becomePartnerBottom}>
-                    <a href="#" className="button-glow">
+                    <a href="/comingsoon" className="button-glow">
                         DIVENTA PARTNER
                         <img src={"/img/btn.svg"} alt={""}/>
                     </a>
@@ -172,7 +154,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className={css.readStoryButton}>
-                            <a href="#" className="button-glow">
+                            <a href="/comingsoon" className="button-glow">
                                 LEGGI LA STORIA
                                 <img src={"/img/btn.svg"} alt={""}/>
                             </a>
@@ -195,7 +177,7 @@ export default function Home() {
                         <PhotosCarousel slides={[{text: "2017", url: "2017.jpg"}, {text: "2016", url: "2016.jpg"}, {text: "2015", url: "2015.jpg"}, {text: "2014", url: "2014.jpg"}, {text: "2013", url: "2013.jpg"}, {text: "2012", url: "2012.jpg"}]} />
                     </div>
                     <div className={css.photosButtonContainer}>
-                        <a href="#" className="button-glow">
+                        <a href="/comingsoon" className="button-glow">
                             TUTTE LE FOTO
                             <img src={"/img/btn.svg"} alt={""}/>
                         </a>
