@@ -34,7 +34,7 @@ export default function Home() {
             <div className={css.bannerContainer}>
                 <div className={css.bannerText}>
                     <h1 className={css.bannerTitle}>RISE FROM THE ASHES</h1>
-                    <h1 className={css.bannerCountdown}><Countdown target={new Date('2026-06-05')} /></h1>
+                    <h1 className={css.bannerCountdown}><Countdown target={new Date('2026-06-05T19:00:00')} /></h1>
                 </div>
                 <div className={css.bannerVideo}>
                     <iframe
