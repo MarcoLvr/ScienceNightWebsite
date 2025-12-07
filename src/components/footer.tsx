@@ -30,13 +30,10 @@ export default function Footer(){
                         <div className={css.miniSectionSocial}>
                             <h3>SOCIAL SCIENCE NIGHT</h3>
                             <div className={css.socials}>
-                                <a href={""}>
+                                <a href={"https://www.instagram.com/sciencenightunivr"}>
                                     <img src={"img/icons/instagram.svg"} />
                                 </a>
-                                <a href={""}>
-                                    <img src={"img/icons/tiktok.svg"} />
-                                </a>
-                                <a href={""}>
+                                <a href={"https://www.youtube.com/@sciencenightunivr"}>
                                     <img src={"img/icons/youtube.svg"} />
                                 </a>
                             </div>
@@ -44,10 +41,10 @@ export default function Footer(){
                         <div className={css.miniSectionSocial}>
                             <h3>SOCIAL DEBUG</h3>
                             <div className={css.socials}>
-                                <a href={""}>
+                                <a href={"https://www.instagram.com/debugunivr"}>
                                     <img src={"img/icons/instagram.svg"} />
                                 </a>
-                                <a href={""}>
+                                <a href={"https://www.tiktok.com/@debugunivr"}>
                                     <img src={"img/icons/tiktok.svg"} />
                                 </a>
                             </div>
