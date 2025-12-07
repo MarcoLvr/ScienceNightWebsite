@@ -21,7 +21,7 @@ export default function Footer(){
                             <h3>LINK UTILI</h3>
                             <div className={css.usefulLinks}>
                                 <a>Entra nello staff</a>
-                                <a>Privacy Policy</a>
+                                <a href={"/privacypolicy"}>Privacy Policy</a>
                             </div>
 
                         </div>
