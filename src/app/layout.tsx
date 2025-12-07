@@ -15,6 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Science Night",
   description: "La festa di fine anno accademico dei dipartimenti di scienze e ingegneria all'università di Verona",
+  openGraph: {
+    type: "website",
+    url: "https://sciencenight.it",
+    title: "Science Night",
+    description: "La festa di fine anno accademico dei dipartimenti di scienze e ingegneria all'università di Verona",
+    siteName: "Science Night",
+    images: [{url: "https://sciencenight.it/img/logobig.png"}],
+  },
+  icons: {
+    icon: "/img/logo.png"
+  }
 };
 
 export default function RootLayout({
@@ -25,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
+      <link rel={"icon"} type={"image/png"} href={"/img/logo.png"} />
       <script src={"/js/smooth-scroll.js"}></script>
     </head>
     <body className={`${geistSans.variable} ${geistMono.variable}`}>
