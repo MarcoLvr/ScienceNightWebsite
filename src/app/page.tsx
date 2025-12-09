@@ -71,7 +71,6 @@ export default function Home() {
                     <div>
                         <a href="/comingsoon" className="button-glow">
                             ESPLORA ORA
-                            <img src={"/img/btn.svg"} alt={""}/>
                         </a></div>
                 </div>
             </div>
@@ -115,7 +114,6 @@ export default function Home() {
                     <div className={css.becomePartner}>
                         <a href="/comingsoon" className="button-glow">
                             DIVENTA PARTNER
-                            <img src={"/img/btn.svg"} alt={""}/>
                         </a>
                     </div>
                 </div>
@@ -130,7 +128,6 @@ export default function Home() {
                 <div className={css.becomePartnerBottom}>
                     <a href="/comingsoon" className="button-glow">
                         DIVENTA PARTNER
-                        <img src={"/img/btn.svg"} alt={""}/>
                     </a>
                 </div>
             </div>
@@ -156,7 +153,6 @@ export default function Home() {
                         <div className={css.readStoryButton}>
                             <a href="/comingsoon" className="button-glow">
                                 LEGGI LA STORIA
-                                <img src={"/img/btn.svg"} alt={""}/>
                             </a>
                         </div>
                     </div>
@@ -179,7 +175,6 @@ export default function Home() {
                     <div className={css.photosButtonContainer}>
                         <a href="/comingsoon" className="button-glow">
                             TUTTE LE FOTO
-                            <img src={"/img/btn.svg"} alt={""}/>
                         </a>
                     </div>
                 </div>
