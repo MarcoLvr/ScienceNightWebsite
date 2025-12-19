@@ -1,0 +1,49 @@
+.bannerContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bannerContainer .bannerText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-align: center;
+    align-content: center;
+}
+
+.bannerContainer .bannerVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.bannerTitle {
+    font-family: 'NixieOne', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    transition: 0.5s;
+    margin: 0 5% 0 5%;
+}
+
+.bannerCountdown {
+    margin-top: 1rem;
+    font-family: 'KeaniaOne', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    transition: 0.5s;
+
+}
+
+.newYearBrand {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    font-family: 'NicoMoji', sans-serif;
+}
+
+.newYearBrand h1 {
+    font-size: 2.5rem;
+}
