@@ -1,6 +1,6 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #2A272B;
+    --foreground: #ededed;
 }
 
 @font-face {
@@ -36,14 +36,6 @@
 @font-face {
     font-family: 'Josefin-Medium'; 
     src: url('/font/josefin/JosefinSans-Medium.ttf');
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2A272B;
-    --foreground: #ededed;
-  }
 }
 
 html,
