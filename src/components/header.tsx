@@ -1,8 +1,13 @@
+'use client'
 import css from './header.module.css'
+import { useState } from 'react';
 
 import Menu from './menu';
 
 export default function Header(){
+
+    const [isOpen,setIsOpen]=useState(false);
+
     return (
         <div>
             <header className={css.header}>
@@ -13,12 +18,12 @@ export default function Header(){
                     <h2>Science Night</h2>
                 </div>
                 <div className={css.menu}>
-                    <button>
+                    <button onClick={()=>setIsOpen(!isOpen)} >
                         <img src={"img/burger.svg"} alt="menu" />
                     </button>
                 </div>
             </header>
-            <Menu />
+            {isOpen && <Menu/>}
         </div>
 
     )
