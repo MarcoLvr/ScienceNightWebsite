@@ -9,7 +9,7 @@ const editions = [
         title: "La nascita di festascienze",
         description: "Il 19 giugno 2009 viene organizzata per la prima volta la \"Festa a scienze\". Quell'anno accademico (2008-2009) era stato segnato dal D.L. Gelmini che spinse molti studenti a mobilitarsi a seguito della riforma universitaria...",
         image: "/img/story/wp_2009.webp",
-        slug: "edition",
+        slug: "2009",
     },
     {
         year: "2010",
@@ -63,7 +63,7 @@ const editions = [
     {
         year: "2017",
         title: "Festascienze is us",
-        description: "Non si anno notizie o parole ufficiali su come la festa del 2017 sia stata organizzata, ma una cosa è certa: qualcosa non quadrava. È stata scritta la seguente lettera dalla vecchia amministrazione, che lascia intendere che ci siano stati problemi organizzativi e che la festa sia stata a rischio annullamento fino all'ultimo minuto...",
+        description: "Non si hanno notizie o parole ufficiali su come la festa del 2017 sia stata organizzata, ma una cosa è certa: qualcosa non quadrava. È stata scritta la seguente lettera dalla vecchia amministrazione, che lascia intendere che ci siano stati problemi organizzativi e che la festa sia stata a rischio annullamento fino all'ultimo minuto...",
         image: "/img/story/wp_2017.webp",
         slug: "2017",
     },

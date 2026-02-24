@@ -320,7 +320,7 @@ const editionsData: Record<string, Edition> = {
         sections: [
             {
                 type: "intro",
-                text: "Non si anno notizie o parole ufficiali su come la festa del 2017 sia stata organizzata, ma una cosa è certa: qualcosa non quadrava. È stata scritta la seguente lettera dalla vecchia amministrazione, che lascia intendere che ci siano stati problemi organizzativi e che la festa sia stata a rischio annullamento fino all'ultimo minuto. La lettera è stata scritta da Walter Riviera, fondatore della festa, e sembra essere un appello agli studenti dello staff per non arrendersi di fronte alle difficoltà e per continuare a credere nella realizzazione della festa, nonostante le avversità.",
+                text: "Non si hanno notizie o parole ufficiali su come la festa del 2017 sia stata organizzata, ma una cosa è certa: qualcosa non quadrava. È stata scritta la seguente lettera dalla vecchia amministrazione, che lascia intendere che ci siano stati problemi organizzativi e che la festa sia stata a rischio annullamento fino all'ultimo minuto. La lettera è stata scritta da Walter Riviera, fondatore della festa, e sembra essere un appello agli studenti dello staff per non arrendersi di fronte alle difficoltà e per continuare a credere nella realizzazione della festa, nonostante le avversità.",
             },
             {
                 type: "text",
