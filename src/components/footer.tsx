@@ -5,7 +5,7 @@ export default function Footer(){
         <footer className={css.footer}>
             <div className={css.footerContainer}>
                 <div className={css.footerLogo}>
-                    <img src={"/img/logo.svg"} />
+                    <img src={"/img/logo.png"} />
                 </div>
                 <div className={css.footerSectionContainer}>
                     <div className={css.footerSection}>
@@ -31,10 +31,10 @@ export default function Footer(){
                             <h3>SOCIAL SCIENCE NIGHT</h3>
                             <div className={css.socials}>
                                 <a href={"https://www.instagram.com/sciencenightunivr"}>
-                                    <img src={"img/icons/instagram.svg"} />
+                                    <img src={"/img/icons/instagram.svg"} />
                                 </a>
                                 <a href={"https://www.youtube.com/@sciencenightunivr"}>
-                                    <img src={"img/icons/youtube.svg"} />
+                                    <img src={"/img/icons/youtube.svg"} />
                                 </a>
                             </div>
                         </div>
@@ -42,10 +42,10 @@ export default function Footer(){
                             <h3>SOCIAL DEBUG</h3>
                             <div className={css.socials}>
                                 <a href={"https://www.instagram.com/debugunivr"}>
-                                    <img src={"img/icons/instagram.svg"} />
+                                    <img src={"/img/icons/instagram.svg"} />
                                 </a>
                                 <a href={"https://www.tiktok.com/@debugunivr"}>
-                                    <img src={"img/icons/tiktok.svg"} />
+                                    <img src={"/img/icons/tiktok.svg"} />
                                 </a>
                             </div>
                         </div>

@@ -1,0 +1,400 @@
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.bannerContainer .bannerText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-align: center;
+    align-content: center;
+}
+
+.bannerContainer .bannerVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.bannerTitle {
+    font-family: 'NixieOne', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    transition: 0.5s;
+    margin: 0 5% 0 5%;
+}
+
+.bannerCountdown {
+    margin-top: 1rem;
+    font-family: 'KeaniaOne', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    transition: 0.5s;
+
+}
+
+.bannerShadowContainer {
+    position: absolute;
+    height: 91vh;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    align-content: end;
+}
+
+.bannerShadow {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+
+}
+
+.newYearSection {
+    background-color: #090909;
+    width: 100%;
+    height: auto;
+    padding: 2% 15% 3% 15%;
+}
+
+.newYearContainer {
+    transition: 0.5s;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.newYearDesc {
+    width: 100%;
+}
+
+.newYearBrand {
+    font-family: 'NicoMoji', sans-serif;
+}
+
+.newYearBrand h1 {
+    font-size: 2.5rem;
+}
+
+.newYearDesc h1 {
+    font-family: 'NixieOne', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    transition: 0.5s;
+}
+
+.newYearDesc p {
+    margin-top: 1rem;
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 1.2rem;
+}
+
+.newsSection {
+    margin: 40px 2% 40px 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsTitle {
+    margin-bottom: 40px;
+    font-family: 'Josefin-Medium', sans-serif;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.newsContainer {
+    --news-number: 2px;
+    justify-content: center;
+    max-width: calc(var(--news-number)*500);
+    width: 100%;
+    height: auto;
+}
+
+.news {
+    margin: 0 4% 0 4%;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.newsElement {
+    position: relative;
+    flex: 1 0 20%;
+    min-width: 250px;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+
+}
+
+.newsImage:hover {
+    box-shadow: 0 0 25px rgba(200, 100, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+.newsElement .newsTag {
+    font-family: 'Josefin-Medium', sans-serif;
+    position: absolute;
+    z-index: 3;
+    background-color: #151515;
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    height: 20%;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    border-radius: 5rem;
+    margin-left: 15%;
+    margin-top: 70%;
+    box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+}
+
+.newsImage {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    box-shadow: 0 0 40px rgba(75, 56, 74, 1);
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.newsImage img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.newsImage .newsImageOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.partnerSection {
+    margin: 100px 2% 40px 2%;
+}
+
+.partnerTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: start;
+    margin-bottom: 40px;
+}
+
+.partnerTitle {
+    font-family: 'Josefin-Medium', sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+}
+
+.partnerYearContainer {
+    height: 100%;
+    min-width: 80px;
+    align-content: end;
+}
+
+.partnerYear {
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 1rem;
+
+}
+
+.becomePartner {
+    transition: 0.5s;
+
+}
+
+.becomePartnerBottom {
+    transition: 0.5s;
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.sponsorCarousels {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.storySection {
+    margin: 100px 2% 40px 2%;
+}
+
+.storyTitle {
+    font-family: 'Josefin-Medium', sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.storyContainer {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.storyImageContainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 50;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.storyImage {
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 70%;
+    height: 70%;
+    aspect-ratio: 4/3;
+    margin: 5%;
+}
+
+.storyImage img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/3;
+}
+
+.storyText {
+    flex: 60;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+}
+
+.storyDescription {
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.readStoryButton {
+    width: 100%;
+    text-align: right;
+}
+
+.photosSection {
+    margin: 100px 2% 40px 2%;
+}
+
+.photosTitle {
+    font-family: 'Josefin-Medium', sans-serif;
+    font-size: 2.5rem;
+}
+
+.photosButtonContainer {
+    margin: 2% 0 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .news {
+        gap: 3rem;
+    }
+
+    .newsElement {
+        flex: 40%;
+    }
+
+
+    .storyDescription {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .news {
+        max-height: none;
+    }
+
+    .newYearDesc h1 {
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+
+    .storyContainer {
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+
+    .storyImage {
+        width: 100%;
+    }
+
+    .storyDescription {
+        font-size: 1.3rem;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .becomePartner {
+        display: none;
+    }
+
+    .becomePartnerBottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bannerTitle {
+        font-size: 3rem;
+    }
+    .newYearDesc h1 {
+        font-size: 3rem;
+    }
+
+    .newYearSection {
+        padding: 2% 5% 3% 5%;
+    }
+
+    .bannerCountdown {
+        font-size: 3rem;
+    }
+}

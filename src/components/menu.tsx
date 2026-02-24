@@ -22,7 +22,7 @@ export default function Menu(){
                 <div className={css.menuList}>
                     <h2>SCOPRI SCIENCE NIGHT</h2>
                     <div className={css.menuEntries}>
-                        <a href={"/comingsoon"}>La storia dell'evento</a>
+                        <a href={"/story"}>La storia dell'evento</a>
                         <a href={"/comingsoon"}>Foto delle edizioni precedenti</a>
                     </div>
                 </div>

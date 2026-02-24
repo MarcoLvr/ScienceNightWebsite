@@ -9,18 +9,18 @@ import PhotosCarousel from '@/components/photos';
 const folder = '/img/sponsor/2018/';
 
 const SLIDES = [
-    folder + 'sponsor_2018_agsm.jpg',
-    folder + 'sponsor_2018_benetti.jpg',
-    folder + 'sponsor_2018_cantinavalpantena.jpg',
-    folder + 'sponsor_2018_casadeltrattore.jpg',
-    folder + 'sponsor_2018_foodora.jpg',
-    folder + 'sponsor_2018_fusushi.jpg',
-    folder + 'sponsor_2018_inkaddiction.jpg',
-    folder + 'sponsor_2018_labottega.jpg',
-    folder + 'sponsor_2018_lanuovatecnica.jpg',
-    folder + 'sponsor_2018_lasuite.jpg',
-    folder + 'sponsor_2018_porgilaltrapancia.jpg',
-    folder + 'sponsor_2018_tgella.jpg'
+    folder + 'sponsor_2018_agsm.webp',
+    folder + 'sponsor_2018_benetti.webp',
+    folder + 'sponsor_2018_cantinavalpantena.webp',
+    folder + 'sponsor_2018_casadeltrattore.webp',
+    folder + 'sponsor_2018_foodora.webp',
+    folder + 'sponsor_2018_fusushi.webp',
+    folder + 'sponsor_2018_inkaddiction.webp',
+    folder + 'sponsor_2018_labottega.webp',
+    folder + 'sponsor_2018_lanuovatecnica.webp',
+    folder + 'sponsor_2018_lasuite.webp',
+    folder + 'sponsor_2018_porgilaltrapancia.webp',
+    folder + 'sponsor_2018_tgella.webp'
 ];
 
 const slides1 = SLIDES.slice(0, SLIDES.length / 2);
