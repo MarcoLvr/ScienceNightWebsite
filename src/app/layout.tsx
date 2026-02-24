@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Science Night",
     description: "La festa di fine anno accademico dei dipartimenti di scienze e ingegneria all'università di Verona",
     siteName: "Science Night",
-    images: [{url: "https://sciencenight.it/img/logobig.png"}],
+    images: [{url: "https://sciencenight.it/img/logobig.webp"}],
   },
   icons: {
     icon: "/img/logo.png"
