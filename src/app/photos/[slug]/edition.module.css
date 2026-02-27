@@ -1,0 +1,214 @@
+/* ── Banner ── */
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.4);
+}
+
+.bannerOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 0.4rem;
+}
+
+.bannerTitle {
+    font-family: 'NicoMoji', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.bannerSubtitle {
+    font-family: 'NixieOne', sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    opacity: 0.85;
+}
+
+.bannerCount {
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-top: 0.3rem;
+}
+
+/* ── Content ── */
+.pageContent {
+    padding: 3rem 2% 6rem 2%;
+}
+
+/* ── Grid ── */
+.masonryGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.masonryCol {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.photoItem {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    break-inside: avoid;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.photoItem:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(180, 85, 240, 0.6);
+}
+
+.photoThumb {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.sentinel {
+    height: 1px;
+    width: 100%;
+}
+
+/* ── Lightbox ── */
+.lightboxBackdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightboxContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.lightboxImg {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.lightboxCounter {
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lightboxClose {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightboxClose:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.lightboxArrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 3rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.lightboxArrow:hover {
+    background: rgba(180, 85, 240, 0.4);
+}
+
+.lightboxArrowLeft {
+    left: 1.5rem;
+}
+
+.lightboxArrowRight {
+    right: 1.5rem;
+}
+
+/* ── Not found ── */
+.notFound {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'NixieOne', sans-serif;
+    font-size: 2rem;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 800px) {
+
+    .bannerTitle {
+        font-size: 3rem;
+    }
+
+    .lightboxArrow {
+        width: 44px;
+        height: 44px;
+        font-size: 2.2rem;
+    }
+}

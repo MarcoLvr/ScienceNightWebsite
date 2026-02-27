@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import Countdown from '@/code/countdown';
 import SponsorCarousel from '@/components/sponsor';
 import PhotosCarousel from '@/components/photos';
+import Link from "next/link";
 
 const folder = '/img/sponsor/2018/';
 
@@ -151,9 +152,9 @@ export default function Home() {
                             </p>
                         </div>
                         <div className={css.readStoryButton}>
-                            <a href="/story" className="button-glow">
+                            <Link href="/story" className="button-glow">
                                 LEGGI LA STORIA
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className={css.storyImageContainer}>
@@ -170,12 +171,14 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                        <PhotosCarousel slides={[{text: "2017", url: "2017.webp"}, {text: "2016", url: "2016.webp"}, {text: "2015", url: "2015.webp"}, {text: "2014", url: "2014.webp"}, {text: "2013", url: "2013.webp"}, {text: "2012", url: "2012.webp"}]} />
+                        <PhotosCarousel slides={[
+                            2025, 2024, 2018, 2017, 2016, 2015
+                        ]} />
                     </div>
                     <div className={css.photosButtonContainer}>
-                        <a href="/comingsoon" className="button-glow">
+                        <Link href="/photos" className="button-glow">
                             TUTTE LE FOTO
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

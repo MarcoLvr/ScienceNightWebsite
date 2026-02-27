@@ -27,6 +27,7 @@
 }
 
 .photoSlideContainer {
+    cursor: pointer;
     position: relative;
     box-shadow: 0 0 40px rgba(75, 56, 74, 1);
     border-radius: 3rem;

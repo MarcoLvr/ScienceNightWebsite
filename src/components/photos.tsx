@@ -4,15 +4,11 @@ import { EmblaOptionsType } from 'embla-carousel'
 import { DotButton, useDotButton } from './photosButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 import css from './photos.module.css'
+import {PREFIX} from "@/app/photos/photosData";
 
 type PropType = {
-    slides: PhotoDesc[]
+    slides: number[]
     options?: EmblaOptionsType
-}
-
-type PhotoDesc = {
-    text: string
-    url: string
 }
 
 const PhotosCarousel: React.FC<PropType> = (props) => {
@@ -29,12 +25,12 @@ const PhotosCarousel: React.FC<PropType> = (props) => {
                     {slides.map((val, index) => (
                         <div className={css.photoSlide} key={index}>
                             <div className={css.photoText}>
-                                <span>SCIENCE NIGHT {val.text}</span>
+                                <span>SCIENCE NIGHT {val}</span>
                             </div>
-                            <div className={css.photoSlideContainer}>
+                            <a href={`/photos/${val}`} className={css.photoSlideContainer}>
                                 <div className={css.photoSlideOverlay}></div>
-                                <img className={css.photoSlideImg} src={"/img/foto/wallpapers/"+val.url}/>
-                            </div>
+                                <img className={css.photoSlideImg} src={`${PREFIX}/thumbs/${val}.webp`}/>
+                            </a>
 
                         </div>
                     ))}
