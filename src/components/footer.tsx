@@ -1,11 +1,12 @@
 import css from './footer.module.css'
+import Link from "next/link";
 
 export default function Footer(){
     return (
         <footer className={css.footer}>
             <div className={css.footerContainer}>
                 <div className={css.footerLogo}>
-                    <img src={"/img/logo.png"} />
+                    <img src={"/img/logobig.webp"} />
                 </div>
                 <div className={css.footerSectionContainer}>
                     <div className={css.footerSection}>
@@ -20,8 +21,8 @@ export default function Footer(){
                         <div className={css.miniSection2}>
                             <h3>LINK UTILI</h3>
                             <div className={css.usefulLinks}>
-                                <a>Entra nello staff</a>
-                                <a href={"/privacypolicy"}>Privacy Policy</a>
+                                <Link href={"/crew"}>Entra nella crew</Link>
+                                <Link href={"/privacypolicy"}>Privacy Policy</Link>
                             </div>
 
                         </div>
@@ -30,10 +31,10 @@ export default function Footer(){
                         <div className={css.miniSectionSocial}>
                             <h3>SOCIAL SCIENCE NIGHT</h3>
                             <div className={css.socials}>
-                                <a href={"https://www.instagram.com/sciencenightunivr"}>
+                                <a  target={"_blank"} href={"https://www.instagram.com/sciencenightunivr"}>
                                     <img src={"/img/icons/instagram.svg"} />
                                 </a>
-                                <a href={"https://www.youtube.com/@sciencenightunivr"}>
+                                <a target={"_blank"} href={"https://www.youtube.com/@sciencenightunivr"}>
                                     <img src={"/img/icons/youtube.svg"} />
                                 </a>
                             </div>
@@ -41,10 +42,10 @@ export default function Footer(){
                         <div className={css.miniSectionSocial}>
                             <h3>SOCIAL DEBUG</h3>
                             <div className={css.socials}>
-                                <a href={"https://www.instagram.com/debugunivr"}>
+                                <a target={"_blank"} href={"https://www.instagram.com/debugunivr"}>
                                     <img src={"/img/icons/instagram.svg"} />
                                 </a>
-                                <a href={"https://www.tiktok.com/@debugunivr"}>
+                                <a target={"_blank"} href={"https://www.tiktok.com/@debugunivr"}>
                                     <img src={"/img/icons/tiktok.svg"} />
                                 </a>
                             </div>

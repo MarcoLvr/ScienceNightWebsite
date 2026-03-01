@@ -97,6 +97,11 @@
     justify-content: center;
     gap: 1rem;
 }
+
+.social {
+    position: relative;
+}
+
 @media screen and (max-width: 1200px) {
 
     .footer {

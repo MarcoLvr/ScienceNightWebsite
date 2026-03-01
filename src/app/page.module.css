@@ -183,6 +183,10 @@
     object-fit: cover;
 }
 
+.newsImageOverlay {
+    z-index: 1;
+}
+
 .newsImage .newsImageOverlay {
     position: absolute;
     width: 100%;
@@ -269,6 +273,7 @@
 }
 
 .storyImage {
+    position: relative;
     border-radius: 2rem;
     overflow: hidden;
     width: 70%;

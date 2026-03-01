@@ -2,6 +2,7 @@ import Image from "next/image";
 import css from "./comingsoon.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -15,10 +16,10 @@ export default function Home() {
                         richiederà ancora un po' di tempo. Torna a trovarci più avanti per vedere questa pagina!</p>
                 </div>
                 <div>
-                    <a href="/" className="button-glow">
+                    <Link href="/" className="button-glow">
                         TORNA ALLA HOME
                         <img src={"/img/btn.svg"} alt={""}/>
-                    </a>
+                    </Link>
                 </div>
             </div>
 

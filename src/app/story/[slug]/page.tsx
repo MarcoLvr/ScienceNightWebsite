@@ -464,7 +464,7 @@ export default async function EditionPage({ params }: { params: Promise<{ slug: 
                                     </div>
                                     <div className={css.imageSectionImg}>
                                         <div className={css.imageWrapper}>
-                                            <img src={section.image} alt={section.imageAlt ?? ""} className={css.sectionImg} />
+                                            <Image fill={true} src={section.image} alt={section.imageAlt ?? ""} className={css.sectionImg} />
                                         </div>
                                     </div>
                                 </section>
@@ -475,7 +475,7 @@ export default async function EditionPage({ params }: { params: Promise<{ slug: 
                                 <section key={i} className={`${css.imageSection} ${css.imageSectionReversed}`}>
                                     <div className={css.imageSectionImg}>
                                         <div className={css.imageWrapper}>
-                                            <img src={section.image} alt={section.imageAlt ?? ""} className={css.sectionImg} />
+                                            <Image fill={true}  src={section.image} alt={section.imageAlt ?? ""} className={css.sectionImg} />
                                         </div>
                                     </div>
                                     <div className={css.imageSectionText}>

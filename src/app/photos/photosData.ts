@@ -7,7 +7,7 @@ export interface PhotoEdition {
    // photos: string[];
 }
 
-export const PREFIX = "/gallery";
+export const PREFIX = "/gallery"; //DEV: https://sciencenight.it/gallery
 
 export const PHOTO_EDITIONS: PhotoEdition[] = [
     {
@@ -79,6 +79,13 @@ export const PHOTO_EDITIONS: PhotoEdition[] = [
         title: "Festascienze 2018",
         cover: PREFIX + "/thumbs/2018.webp",
         photoNumber: 1869
+    },
+    {
+        slug: "2019",
+        year: "2019",
+        title: "Festascienze 2019",
+        cover: PREFIX + "/thumbs/2019.webp",
+        photoNumber: 1165
     },
     {
         slug: "2024",

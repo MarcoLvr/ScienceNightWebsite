@@ -1,10 +1,11 @@
 'use client'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import AutoScroll from 'embla-carousel-auto-scroll'
 
 import css from './sponsor.module.css'
+import Image from "next/image";
 
 type PropType = {
     slides: string[]
@@ -17,10 +18,7 @@ const SponsorCarousel: React.FC<PropType> = (props) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
         AutoScroll({ playOnInit: true, stopOnInteraction: false, startDelay: 0, speed: 1 }),
     ])
-    const [isPlaying, setIsPlaying] = useState(false)
-
-
-    const onButtonAutoplayClick = useCallback(
+    useCallback(
         (callback: () => void) => {
             const autoScroll = emblaApi?.plugins()?.autoScroll
             if (!autoScroll) return
@@ -34,8 +32,7 @@ const SponsorCarousel: React.FC<PropType> = (props) => {
             callback()
         },
         [emblaApi]
-    )
-
+    );
     return (
         <div className={css.sponsor} dir={options?.direction}>
             <div className={css.sponsorViewport} ref={emblaRef}>
@@ -43,7 +40,7 @@ const SponsorCarousel: React.FC<PropType> = (props) => {
                     {slides.map((slide, index) => (
                         <div className={css.sponsorSlide} key={index}>
                             <div className={css.sponsorSlideInner}>
-                                <img src={slide} alt={"sponsor"}/>
+                                <Image fill={true} src={slide} alt={"sponsor"}/>
                             </div>
                         </div>
                     ))}

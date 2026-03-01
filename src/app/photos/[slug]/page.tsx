@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import Link from "next/link";
 import { PHOTO_EDITIONS } from "../photosData";
 import PhotoGrid from "./PhotoGrid";
+import Image from "next/image";
 
 export default async function PhotoEditionPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
@@ -26,7 +27,8 @@ export default async function PhotoEditionPage({ params }: { params: Promise<{ s
             <Header />
             <div>
                 <div className={css.bannerContainer}>
-                    <img
+                    <Image
+                        fill={true}
                         src={edition.cover}
                         alt={edition.title}
                         className={css.bannerImage}

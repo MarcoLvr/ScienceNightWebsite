@@ -5,6 +5,7 @@ import { DotButton, useDotButton } from './photosButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 import css from './photos.module.css'
 import {PREFIX} from "@/app/photos/photosData";
+import Image from "next/image";
 
 type PropType = {
     slides: number[]
@@ -29,7 +30,7 @@ const PhotosCarousel: React.FC<PropType> = (props) => {
                             </div>
                             <a href={`/photos/${val}`} className={css.photoSlideContainer}>
                                 <div className={css.photoSlideOverlay}></div>
-                                <img className={css.photoSlideImg} src={`${PREFIX}/thumbs/${val}.webp`}/>
+                                <Image fill={true} alt={""} className={css.photoSlideImg} src={`${PREFIX}/thumbs/${val}.webp`}/>
                             </a>
 
                         </div>

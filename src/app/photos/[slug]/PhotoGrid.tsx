@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import css from "./edition.module.css";
 import Lightbox from "./Lightbox";
 import {PREFIX} from "@/app/photos/photosData";
+import Image from "next/image";
 
 const BATCH_SIZE = 30;
 const COLUMNS_DESKTOP = 4;
@@ -92,7 +93,7 @@ export default function PhotoGrid({ photos, year }: { photos: number; year: stri
                                         src={src}
                                         alt={`Foto ${globalIndex + 1}`}
                                         className={css.photoThumb}
-                                        loading="lazy"
+                                        loading={"lazy"}
                                     />
                                 </button>
                             );

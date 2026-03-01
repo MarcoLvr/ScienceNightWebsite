@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { PHOTO_EDITIONS } from "./photosData";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PhotosPage() {
     return (
@@ -27,7 +28,7 @@ export default function PhotosPage() {
 
                 <div className={css.grid}>
                     {PHOTO_EDITIONS.map((edition) => (
-                        <a
+                        <Link
                             key={edition.slug}
                             href={`/photos/${edition.slug}`}
                             className={css.card}
@@ -45,7 +46,7 @@ export default function PhotosPage() {
                                 <h2 className={css.cardTitle}>{edition.title}</h2>
                                 <span className={css.cardCount}>{edition.photoNumber} foto</span>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

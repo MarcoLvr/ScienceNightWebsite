@@ -64,13 +64,13 @@ export default function Home() {
                         <h1>RISE FROM THE ASHES</h1>
                     </div>
                     <div className={css.newYearDesc}>
-                        <p>"Ora voi o risorgete come squadra o cederete un centimetro alla volta, uno stand dopo l'altro fino alla disfatta".
-                        Queste sono le parole di chi, fino al 2017, ha sempre cercato di supportare l'evento prima che l'organizzazione crollasse nell'oblio.
+                        <p>&quot;Ora voi o risorgete come squadra o cederete un centimetro alla volta, uno stand dopo l&apos;altro fino alla disfatta&quot;.
+                        Queste sono le parole di chi, fino al 2017, ha sempre cercato di supportare l&apos;evento prima che l&apos;organizzazione crollasse nell&apos;oblio.
                         Ma le cose stanno cambiando. Il momento della rinascita di Festa scienze, ribrandizzata in Science Night, è giunto e ora più che mai la nuova organizzazione si sta preparando
-                        a far risplendere l'evento più rinnomato dell'Università di Verona. Tic Tac, il tempo scorre. Preparati alla nuova edizione di Science Night!</p>
+                        a far risplendere l&apos;evento più rinnomato dell&apos;Università di Verona. Tic Tac, il tempo scorre. Preparati alla nuova edizione di Science Night!</p>
                     </div>
                     <div>
-                        <a href="/comingsoon" className="button-glow">
+                        <a href="/event/2026" className="button-glow">
                             ESPLORA ORA
                         </a></div>
                 </div>
@@ -88,7 +88,7 @@ export default function Home() {
                             </div>
                             <div className={css.newsImage}>
                                 <div className={css.newsImageOverlay}></div>
-                                <img src={"/img/foto/eventi/homecoming25/wallpaper.webp"}/>
+                                <Image src={"/img/foto/eventi/homecoming25/wallpaper.webp"} fill={true} alt={"Sito rinnovato"}/>
                             </div>
                         </a>
                         <a href={"https://www.youtube.com/watch?v=IHaE2CYc1n8"} target={"_blank"} rel={"noopener noreferrer"} className={css.newsElement}>
@@ -97,7 +97,7 @@ export default function Home() {
                             </div>
                             <div className={css.newsImage}>
                                 <div className={css.newsImageOverlay}></div>
-                                <img src={"/img/foto/eventi/homecoming25/wallpaper3.webp"}/>
+                                <Image src={"/img/foto/eventi/homecoming25/wallpaper3.webp"} fill={true} alt={"Debug Homecoming Aftermovie"}/>
                             </div>
                         </a>
                     </div>
@@ -135,20 +135,20 @@ export default function Home() {
 
             <div className={css.storySection}>
                 <div className={css.storyTitle}>
-                    <span>Un'idea di un piccolo gruppo</span>
+                    <span>Un&apos;idea di un piccolo gruppo</span>
                 </div>
                 <div className={css.storyContainer}>
                     <div className={css.storyText}>
                         <div className={css.storyDescription}>
                             <p>
-                                Il 19 giugno 2009 viene organizzata per la prima volta la "Festa a scienze".
-                                Quell'anno accademico (2008-2009) era stato segnato dal D.L. Gelmini che
+                                Il 19 giugno 2009 viene organizzata per la prima volta la &quot;Festa a scienze&quot;.
+                                Quell&apos;anno accademico (2008-2009) era stato segnato dal D.L. Gelmini che
                                 spinse molti studenti a mobilitarsi a seguito della riforma universitaria.
-                                Tra questi anche Wudy, al secolo Walter Riviera, che in quell'anno venne eletto
+                                Tra questi anche Wudy, al secolo Walter Riviera, che in quell&apos;anno venne eletto
                                 (per la prima volta) come rappresentante della facoltà di Scienze MM.FF.NN.
-                                Sin dall'inizio della sua esperienza da rappresentante si trovò a fronteggiare un
+                                Sin dall&apos;inizio della sua esperienza da rappresentante si trovò a fronteggiare un
                                 problema ben noto a molte università italiane: la diffidenza ed il clima
-                                freddo dell'ambiente universitario
+                                freddo dell&apos;ambiente universitario
                             </p>
                         </div>
                         <div className={css.readStoryButton}>
@@ -159,7 +159,7 @@ export default function Home() {
                     </div>
                     <div className={css.storyImageContainer}>
                         <div className={css.storyImage}>
-                            <img src={"/img/story.webp"} alt={"story"}/>
+                            <Image src={"/img/story.webp"} fill={true} alt={"story"}/>
                         </div>
                     </div>
                 </div>

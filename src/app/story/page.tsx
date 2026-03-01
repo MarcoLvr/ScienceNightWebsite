@@ -2,6 +2,7 @@ import Image from "next/image";
 import css from "./story.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 const editions = [
     {
@@ -107,7 +108,7 @@ export default function StoryPage() {
                     {editions.map((edition, index) => {
                         const isEven = index % 2 === 0;
                         return (
-                            <a
+                            <Link
                                 key={edition.slug}
                                 href={`/story/${edition.slug}`}
                                 className={`${css.storyItem} ${isEven ? css.storyItemLeft : css.storyItemRight}`}
@@ -124,7 +125,8 @@ export default function StoryPage() {
                                         </div>
                                         <div className={css.storyImageBlock}>
                                             <div className={css.storyImageWrapper}>
-                                                <img
+                                                <Image
+                                                    fill={true}
                                                     src={edition.image}
                                                     alt={edition.title}
                                                     className={css.storyImg}
@@ -137,7 +139,8 @@ export default function StoryPage() {
                                     <>
                                         <div className={css.storyImageBlock}>
                                             <div className={css.storyImageWrapper}>
-                                                <img
+                                                <Image
+                                                    fill={true}
                                                     src={edition.image}
                                                     alt={edition.title}
                                                     className={css.storyImg}
@@ -155,7 +158,7 @@ export default function StoryPage() {
                                         </div>
                                     </>
                                 )}
-                            </a>
+                            </Link>
                         );
                     })}
                 </div>
