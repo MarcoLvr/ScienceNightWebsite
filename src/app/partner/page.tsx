@@ -4,10 +4,10 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 const stats = [
-    { number: "16+", label: "Edizioni organizzate" },
+    { number: "13+", label: "Edizioni organizzate" },
     { number: "1500+", label: "Visitatori a edizione" },
     { number: "24.000+", label: "Euro donati in beneficienza" },
-    { number: "15+", label: "Anni di storia" },
+    { number: "16+", label: "Anni di storia" },
 ];
 
 const benefits = [
@@ -186,7 +186,7 @@ export default function PartnerPage() {
                     <h2 className={css.ctaTitle}>Vuoi entrare a far parte della storia?</h2>
                     <p className={css.ctaText}>
                         Scrivici per ricevere il nostro dossier sponsor con tutte le opportunità disponibili,
-                        i pacchetti di visibilità e i dettagli sull&apos;edizione in corso. Saremo disponibili anche a fissare un incontro faccia a faccia per discutere della proposta e personalizzarla in base alle esigenze.
+                        i pacchetti di visibilità e i dettagli sull&apos;edizione in corso. Saremo disponibili anche a fissare un incontro in presenza per discutere della proposta e personalizzarla in base alle esigenze.
                     </p>
                     <a href="mailto:sales@sciencenight.it" className={css.ctaEmail}>
                         sales@sciencenight.it

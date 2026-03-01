@@ -113,7 +113,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={css.becomePartner}>
-                        <a href="/comingsoon" className="button-glow">
+                        <a href="/partner" className="button-glow">
                             DIVENTA PARTNER
                         </a>
                     </div>
