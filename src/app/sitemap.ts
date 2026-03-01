@@ -6,11 +6,23 @@ const getEditionSlugs = async () => {
     return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2024", "2025"];
 };
 
+const getPhotosSlugs = async () => {
+    return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2024", "2025"];
+};
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const editionSlugs = await getEditionSlugs();
+    const photosSlugs = await getPhotosSlugs();
 
     const editionEntries: MetadataRoute.Sitemap = editionSlugs.map((slug) => ({
         url: `${BASE_URL}/story/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+    }));
+
+    const photosEntries: MetadataRoute.Sitemap = photosSlugs.map((slug) => ({
+        url: `${BASE_URL}/photos/${slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
@@ -24,12 +36,36 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: 1,
         },
         {
+            url: `${BASE_URL}/partner`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 1,
+        },
+        {
+            url: `${BASE_URL}/crew`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 1,
+        },
+        {
+            url: `${BASE_URL}/event/2026`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 1,
+        },
+        {
             url: `${BASE_URL}/story`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.9,
+        },
+        {
+            url: `${BASE_URL}/photos`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.9,
         }
     ];
 
-    return [...staticEntries, ...editionEntries];
+    return [...staticEntries, ...editionEntries, ...photosEntries];
 }
