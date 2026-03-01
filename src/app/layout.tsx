@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "@/components/cookie-banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,19 +30,20 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-    <head>
-      <link rel={"icon"} type={"image/png"} href={"/img/logo.png"} />
-      <script src={"/js/smooth-scroll.js"}></script>
-    </head>
-    <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <html lang="en">
+      <head>
+        <link rel={"icon"} type={"image/png"} href={"/img/logo.png"} />
+        <script src={"/js/smooth-scroll.js"}></script>
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      {children}
+      <CookieBanner />
       </body>
-    </html>
+      </html>
   );
 }
