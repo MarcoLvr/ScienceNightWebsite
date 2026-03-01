@@ -7,7 +7,7 @@ export interface PhotoEdition {
    // photos: string[];
 }
 
-export const PREFIX = "/gallery"; //DEV: https://sciencenight.it/gallery
+export const PREFIX = "https://sciencenight.it/gallery";
 
 export const PHOTO_EDITIONS: PhotoEdition[] = [
     {
