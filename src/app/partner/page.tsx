@@ -37,12 +37,12 @@ const benefits = [
 ];
 
 const partners = [
-    {
+    /*{
         name: "Benetti",
         years: "Partner storico",
         desc: "Uno dei partner più longevi della festa, presente fin dalle prime edizioni con forniture e supporto logistico.",
         url: "https://benetti.store/",
-    },
+    },*/
     {
         name: "Cantina Valpantena",
         years: "Partner storico",
