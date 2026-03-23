@@ -19,37 +19,6 @@ const PhotosCarousel: React.FC<PropType> = (props) => {
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi)
 
-    const [imagesLoaded, setImagesLoaded] = useState<boolean>(false);
-    const observerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        // Crea sentinella con Intersection Observer
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    // Quando la sentinella entra in viewport, carica TUTTE le immagini
-                    if (entry.isIntersecting) {
-                        setImagesLoaded(true);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                rootMargin: '100px', // Inizia a caricare 100px prima di entrare in viewport
-            }
-        );
-
-        if (observerRef.current) {
-            observer.observe(observerRef.current);
-        }
-
-        return () => {
-            if (observerRef.current) {
-                observer.unobserve(observerRef.current);
-            }
-        };
-    }, []);
-
     return (
         <section className={css.photosCarousel}>
             <div className={css.photosViewport} ref={emblaRef}>
@@ -61,12 +30,7 @@ const PhotosCarousel: React.FC<PropType> = (props) => {
                             </div>
                             <a href={`/photos/${val}`} className={css.photoSlideContainer}>
                                 <div className={css.photoSlideOverlay}></div>
-                                {imagesLoaded && (
-                                    <Image fill={true} alt={""} className={css.photoSlideImg} src={`${PREFIX}/thumbs/${val}.webp`}/>
-                                )}
-                                {!imagesLoaded && (
-                                    <div className={css.photoPlaceholder} />
-                                )}
+                                <Image fill={true} alt={""} className={css.photoSlideImg} src={`${PREFIX}/thumbs/${val}.webp`}/>
                             </a>
 
                         </div>

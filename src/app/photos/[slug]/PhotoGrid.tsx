@@ -5,7 +5,6 @@ import { useState, useEffect, useRef } from "react";
 import css from "./edition.module.css";
 import Lightbox from "./Lightbox";
 import {PREFIX} from "@/app/photos/photosData";
-import Image from "next/image";
 
 const BATCH_SIZE = 30;
 const COLUMNS_DESKTOP = 4;
@@ -34,7 +33,8 @@ export default function PhotoGrid({ photos, year }: { photos: number; year: stri
     const [visibleCount, setVisibleCount] = useState(Math.min(BATCH_SIZE, photos));
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
     const [colCount, setColCount] = useState(COLUMNS_DESKTOP);
-    const sentinelRef = useRef<HTMLDivElement>(null);
+    const sentinelRef = useRef<HTMLDivElement | null>(null);
+    const observerRef = useRef<IntersectionObserver | null>(null);
 
     const allPhotos = useRef<string[]>(
         Array.from({ length: photos }, (_, i) =>
@@ -50,21 +50,32 @@ export default function PhotoGrid({ photos, year }: { photos: number; year: stri
         return () => window.removeEventListener("resize", update);
     }, []);
 
+    // Observer per sentinella globale
     useEffect(() => {
         if (visibleCount >= photos) return;
 
-        const observer = new IntersectionObserver(
+        if (observerRef.current) {
+            observerRef.current.disconnect();
+        }
+
+        observerRef.current = new IntersectionObserver(
             (entries) => {
-                if (entries[0].isIntersecting) {
+                // Se la sentinella globale entra in viewport, carica per TUTTE le colonne
+                if (entries.some(entry => entry.isIntersecting)) {
                     setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, photos));
                 }
             },
-            { rootMargin: "400px" }
+            { rootMargin: "300px" }
         );
 
-        const el = sentinelRef.current;
-        if (el) observer.observe(el);
-        return () => { if (el) observer.unobserve(el); };
+        // Osserva solo la sentinella globale
+        if (sentinelRef.current) {
+            observerRef.current.observe(sentinelRef.current);
+        }
+
+        return () => {
+            if (observerRef.current) observerRef.current.disconnect();
+        };
     }, [visibleCount, photos]);
 
     const visiblePhotos = allPhotos.current.slice(0, visibleCount);
@@ -79,7 +90,10 @@ export default function PhotoGrid({ photos, year }: { photos: number; year: stri
         <>
             <div className={css.masonryGrid}>
                 {columns.map((col, colIdx) => (
-                    <div key={colIdx} className={css.masonryCol}>
+                    <div
+                        key={colIdx}
+                        className={css.masonryCol}
+                    >
                         {col.map((src, rowIdx) => {
                             const globalIndex = rowIdx * colCount + colIdx;
                             return (
@@ -93,7 +107,7 @@ export default function PhotoGrid({ photos, year }: { photos: number; year: stri
                                         src={src}
                                         alt={`Foto ${globalIndex + 1}`}
                                         className={css.photoThumb}
-                                        loading={"lazy"}
+                                        loading="lazy"
                                     />
                                 </button>
                             );
@@ -102,9 +116,8 @@ export default function PhotoGrid({ photos, year }: { photos: number; year: stri
                 ))}
             </div>
 
-            {visibleCount < photos && (
-                <div ref={sentinelRef} className={css.sentinel} />
-            )}
+            {/* Sentinella globale unica */}
+            <div ref={sentinelRef} className={css.sentinel} />
 
             {lightboxIndex !== null && (
                 <Lightbox
