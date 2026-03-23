@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Menu from './menu';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header(){
 
@@ -16,7 +17,7 @@ export default function Header(){
                     <a href={"/"}><Image src={"/img/logo.png"} height={75} width={75} alt="logo" /></a>
                 </div>
                 <div className={css.headerTitle}>
-                    <h2>Science Night</h2>
+                    <Link href={"/"}>Science Night</Link>
                 </div>
                 <div className={css.menu}>
                     <button onClick={()=>setIsOpen(!isOpen)} >

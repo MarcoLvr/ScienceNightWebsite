@@ -27,6 +27,40 @@ const SLIDES = [
 const slides1 = SLIDES.slice(0, SLIDES.length / 2);
 const slides2 = SLIDES.slice(SLIDES.length / 2, SLIDES.length);
 
+// Dati JSON-LD per l'evento
+//TODO: aggiornare con la locandina e aggiungere lo script nella pagina
+//<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Science Night - Rise From The Ashes",
+    "startDate": "2026-06-05T17:30:00Z",
+    "endDate": "2026-06-05T23:30:00Z",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+        "@type": "Place",
+        "name": "Ca' Vignal 2",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Str. le Grazie",
+            "addressLocality": "Verona",
+            "postalCode": "37134",
+            "addressCountry": "IT"
+        }
+    },
+    "image": [
+        "https://sciencenight.it/img/logobig.webp"
+    ],
+    "description": "Science Night è la festa di fine anno accademico dei dipartimenti di Scienze e Ingegneria dell'Università di Verona. Organizzata interamente dagli studenti, è diventata un punto di riferimento per l'intera comunità universitaria e non solo.",
+    "organizer": {
+        "@type": "Organization",
+        "name": "Università di Verona",
+        "url": "https://www.univr.it"
+    },
+    "url": "https://sciencenight.it"
+}
+
 export default function Home() {
   return (
     <div>
@@ -35,7 +69,7 @@ export default function Home() {
             <div className={css.bannerContainer}>
                 <div className={css.bannerText}>
                     <h1 className={css.bannerTitle}>RISE FROM THE ASHES</h1>
-                    <h1 className={css.bannerCountdown}><Countdown target={new Date(Date.UTC(2026, 5,5, 17,30,0))} /></h1>
+                    <h1 className={css.bannerCountdown}><Countdown target={new Date(Date.UTC(2026, 5,5, 17,0,0))} /></h1>
                 </div>
                 <div className={css.bannerVideo}>
                     <iframe

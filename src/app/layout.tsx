@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   }
 };
 
+// smooth scroll, disattivato perché ultra buggato
+//        <script src={"/js/smooth-scroll.js"}></script>
 export default function RootLayout({
                                      children,
                                    }: Readonly<{
@@ -38,7 +40,6 @@ export default function RootLayout({
       <html lang="en">
       <head>
         <link rel={"icon"} type={"image/png"} href={"/img/logo.png"} />
-        <script src={"/js/smooth-scroll.js"}></script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       {children}

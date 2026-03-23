@@ -188,10 +188,10 @@ export default function PartnerPage() {
                         Scrivici per ricevere il nostro dossier sponsor con tutte le opportunità disponibili,
                         i pacchetti di visibilità e i dettagli sull&apos;edizione in corso. Saremo disponibili anche a fissare un incontro in presenza per discutere della proposta e personalizzarla in base alle esigenze.
                     </p>
-                    <a href="mailto:sales@sciencenight.it" className={css.ctaEmail}>
-                        sales@sciencenight.it
+                    <a href="mailto:sponsor@sciencenight.it" className={css.ctaEmail}>
+                        sponsor@sciencenight.it
                     </a>
-                    <a href="mailto:sales@sciencenight.it" className="button-glow" style={{ marginTop: "1rem" }}>
+                    <a href="mailto:sponsor@sciencenight.it" className="button-glow" style={{ marginTop: "1rem" }}>
                         Contattaci ora
                     </a>
                 </section>

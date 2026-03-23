@@ -14,9 +14,10 @@ export default function Footer(){
                             <h3>CONTATTI</h3>
                             <div className={css.contacts}>
                                 <p>Per informazioni - <a href={"mailto:info@sciencenight.it"}>info@sciencenight.it</a></p>
-                                <p>Per richieste commerciali - <a href={"mailto:sales@sciencenight.it"}>sales@sciencenight.it</a></p>
+                                <p>Per richieste commerciali - <a href={"mailto:sponsor@sciencenight.it"}>sponsor@sciencenight.it</a></p>
                             </div>
                             <p className={css.address}>Ca’ Vignal 2 - Str. Le Grazie 15, 37134 VR</p>
+                            <p className={css.address}>Tel. 0458027793</p>
                         </div>
                         <div className={css.miniSection2}>
                             <h3>LINK UTILI</h3>
@@ -53,7 +54,7 @@ export default function Footer(){
                     </div>
                 </div>
                 <div className={css.copyright}>
-                    <p>© 2025 Debug Univr</p>
+                    <p>© {new Date().getFullYear()} Debug Univr</p>
                 </div>
             </div>
 
