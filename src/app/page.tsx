@@ -28,29 +28,27 @@ const slides1 = SLIDES.slice(0, SLIDES.length / 2);
 const slides2 = SLIDES.slice(SLIDES.length / 2, SLIDES.length);
 
 // Dati JSON-LD per l'evento
-//TODO: aggiornare con la locandina e aggiungere lo script nella pagina
-//<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "Science Night - Rise From The Ashes",
-    "startDate": "2026-06-05T17:30:00Z",
-    "endDate": "2026-06-05T23:30:00Z",
+    "startDate": "2026-06-05T16:00:00Z",
+    "endDate": "2026-06-05T22:00:00Z",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "eventStatus": "https://schema.org/EventScheduled",
     "location": {
         "@type": "Place",
-        "name": "Ca' Vignal 2",
+        "name": "Area scienze e ingegneria - Università di Verona",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Str. le Grazie",
+            "streetAddress": "Str. le Grazie 15",
             "addressLocality": "Verona",
             "postalCode": "37134",
             "addressCountry": "IT"
         }
     },
     "image": [
-        "https://sciencenight.it/img/logobig.webp"
+        "https://sciencenight.it/img/edizioni/2026/locandina.png"
     ],
     "description": "Science Night è la festa di fine anno accademico dei dipartimenti di Scienze e Ingegneria dell'Università di Verona. Organizzata interamente dagli studenti, è diventata un punto di riferimento per l'intera comunità universitaria e non solo.",
     "organizer": {
@@ -64,6 +62,7 @@ const jsonLd = {
 export default function Home() {
   return (
     <div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header />
         <div>
             <div className={css.bannerContainer}>
@@ -110,7 +109,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className={css.newsSection}>
+            {/*<div className={css.newsSection}>
                 <div className={css.newsTitle}>
                     <span>Le ultime novità</span>
                 </div>
@@ -136,36 +135,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <div className={css.partnerSection}>
-                <div className={css.partnerTitleContainer}>
-                    <div className={css.partnerTitle}>
-                        <span>I partner di Science Night</span>
-                        <div className={css.partnerYearContainer}>
-                            <span className={css.partnerYear}>del 2018</span>
-                        </div>
-                    </div>
-                    <div className={css.becomePartner}>
-                        <a href="/partner" className="button-glow">
-                            DIVENTA PARTNER
-                        </a>
-                    </div>
-                </div>
-                <div className={css.sponsorCarousels}>
-                    <div>
-                        <SponsorCarousel slides={slides1} options={{loop: true}} />
-                    </div>
-                    <div>
-                        <SponsorCarousel slides={slides2} options={{direction: "rtl",loop: true}}/>
-                    </div>
-                </div>
-                <div className={css.becomePartnerBottom}>
-                    <a href="/comingsoon" className="button-glow">
-                        DIVENTA PARTNER
-                    </a>
-                </div>
-            </div>
+            </div>*/}
 
             <div className={css.storySection}>
                 <div className={css.storyTitle}>
@@ -196,6 +166,46 @@ export default function Home() {
                             <Image src={"/img/story.webp"} fill={true} alt={"story"}/>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className={css.partnerSection}>
+                <div className={css.partnerTitleContainer}>
+                    <div className={css.partnerTitle}>
+                        <span>I partner di Science Night</span>
+                        <div className={css.partnerYearContainer}>
+                            <span className={css.partnerYear}>del 2026</span>
+                        </div>
+                    </div>
+                    <div className={css.becomePartner}>
+                        <a href="/partner" className="button-glow">
+                            DIVENTA PARTNER
+                        </a>
+                    </div>
+                </div>
+                <div className={css.sponsorCarousels}>
+                    <div className={css.partnerGrid}>
+                        <div className={css.partnerItem}>
+                            <Image src="/img/sponsor/2026/univr.webp" width={900} height={200} alt="Casa del Trattore" />
+                        </div>
+                        <div className={css.partnerItem}>
+                            <Image src="/img/sponsor/2026/esu.webp" width={820} height={200} alt="ESU" />
+                        </div>
+                        <div className={css.partnerItem}>
+                            <Image src="/img/sponsor/2026/labottega.webp" width={800} height={200} alt="La bottega" />
+                        </div>
+                        <div className={css.partnerItem}>
+                            <Image src="/img/sponsor/2026/dot.webp" width={1000} height={300} alt="La bottega" />
+                        </div>
+                        <div className={css.partnerItem}>
+                            <Image src="/img/sponsor/2026/clipper.webp" width={1000} height={300} alt="La bottega" />
+                        </div>
+                    </div>
+                </div>
+                <div className={css.becomePartnerBottom}>
+                    <a href="/comingsoon" className="button-glow">
+                        DIVENTA PARTNER
+                    </a>
                 </div>
             </div>
 

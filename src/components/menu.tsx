@@ -9,17 +9,17 @@ export default function Menu(){
                 <div className={css.menuList}>
                     <h2>SCIENCE NIGHT 2026</h2>
                     <div className={css.menuEntries}>
-                        <Link href={"/event/2026"}>Il tema</Link>
-                        <Link href={"/event/2026"}>Prevendite</Link>
+                        <Link href={"/event/2026"}>Scopri l'edizione</Link>
+                        <Link href={"/event/2026#FAQ"}>FAQ</Link>
                     </div>
                 </div>
-                <div className={css.menuList}>
+                {/*<div className={css.menuList}>
                     <h2>NEWS</h2>
                     <div className={css.menuEntries}>
                         <Link href={"/comingsoon"}>Sito rinnovato</Link>
                         <a href={"https://www.youtube.com/watch?v=IHaE2CYc1n8"}>Debug Homecoming Aftermovie</a>
                     </div>
-                </div>
+                </div>*/}
                 <div className={css.menuList}>
                     <h2>SCOPRI SCIENCE NIGHT</h2>
                     <div className={css.menuEntries}>
