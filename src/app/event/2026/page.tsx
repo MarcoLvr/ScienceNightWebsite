@@ -168,7 +168,7 @@ export default function Event2026() {
                 </div>
                 <div className={css.partnerGrid}>
                     <div className={css.partnerItem}>
-                        <Image src="/img/sponsor/2026/univr.webp" width={900} height={200} alt="Casa del Trattore" />
+                        <Image src="/img/sponsor/2026/univr.webp" width={900} height={200} alt="Università di Verona" />
                     </div>
                     <div className={css.partnerItem}>
                         <Image src="/img/sponsor/2026/esu.webp" width={820} height={200} alt="ESU" />
@@ -177,10 +177,10 @@ export default function Event2026() {
                         <Image src="/img/sponsor/2026/labottega.webp" width={800} height={200} alt="La bottega" />
                     </div>
                     <div className={css.partnerItem}>
-                        <Image src="/img/sponsor/2026/dot.webp" width={1000} height={300} alt="La bottega" />
+                        <Image src="/img/sponsor/2026/dot.webp" width={1000} height={300} alt="Dot Print" />
                     </div>
                     <div className={css.partnerItem}>
-                        <Image src="/img/sponsor/2026/clipper.webp" width={1000} height={300} alt="La bottega" />
+                        <Image src="/img/sponsor/2026/clipper.webp" width={1000} height={300} alt="Bar Clipper" />
                     </div>
                 </div>
             </div>
