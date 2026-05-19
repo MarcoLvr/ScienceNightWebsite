@@ -11,7 +11,7 @@ export default function Event2026() {
             <Header />
 
             <div className={css.banner}>
-                <Image className={css.bannerBg} src="/img/foto/eventi/homecoming25/wallpaper.webp" alt="Crowd background" fill style={{objectFit: 'cover'}} />
+                <Image className={css.bannerBg} src="/img/edizioni/2026/back.webp" alt="Crowd background" fill style={{objectFit: 'cover'}} />
                 <div className={css.titleContainer}>
                     <h1 className={css.mainTitle}>Science Night 2026</h1>
                     <h2 className={css.subTitle}>RISE FROM THE ASHES</h2>
@@ -24,7 +24,7 @@ export default function Event2026() {
                         <div className={css.textContent}>
                             <h2 className={css.sectionTitle}>La fenice, simbolo della rinascita</h2>
                             <p>
-                                La fenice è un simbolo chiave per segnare la rinascita di qualcosa ma anche per indicare un cambiamento importante o una restaurazione. Quest'anno la fenice vi accompagnerà durante tutta la vostra esperienza in Science Night che è rinata con una nuova faccia ma tenendo a mente del passato.
+                                La fenice è un simbolo chiave per segnare la rinascita di qualcosa ma anche per indicare un cambiamento importante o una restaurazione. Quest'anno la fenice vi accompagnerà durante tutta la vostra esperienza in Science Night che è rinata con una nuova faccia ma tenendo a mente il passato.
                                 Science Night 2026 non è solo una festa ma è anche un nuovo punto di partenza che vuole dare il via a una nuova serie di fantastiche edizioni con tante novità e richiami dal passato.
                             </p>
                         </div>
@@ -100,15 +100,14 @@ export default function Event2026() {
                             <span className={css.eventTime}>20:30</span>
                             <div className={css.timeDot}></div>
                             <div className={css.eventDetails}>
-                                <div className={css.eventTitle}>Ci siamo quasi</div>
-                                <div className={css.eventDesc}>e termine<br/>open lab</div>
+                                <div className={css.eventTitle}>Termine open lab</div>
                             </div>
                         </div>
                         <div className={`${css.timelineEvent} ${css.up}`}>
                             <span className={css.eventTime}>21:00</span>
                             <div className={css.timeDot}></div>
                             <div className={css.eventDetails}>
-                                <div className={css.eventTitle}>DJ Fafu</div>
+                                <div className={css.eventTitle}>Piero Giaccone</div>
                                 <div className={css.eventDesc}>con cerimonia<br/>di apertura</div>
                             </div>
                         </div>
@@ -123,8 +122,7 @@ export default function Event2026() {
                             <span className={css.eventTime}>00:00</span>
                             <div className={css.timeDot}></div>
                             <div className={css.eventDetails}>
-                                <div className={css.eventTitle}>Chiusura</div>
-                                <div className={css.eventDesc}>con cerimonia<br/>di chiusura</div>
+                                <div className={css.eventTitle}>Termine dell'evento</div>
                             </div>
                         </div>
                     </div>
@@ -135,24 +133,30 @@ export default function Event2026() {
                 <h2 className={css.sectionTitle}>Lineup</h2>
                 <div className={css.lineupGrid}>
                     <div className={css.lineupCard}>
-                        <Image src="/img/story.webp" alt="Science Show" width={300} height={200} className={css.lineupImage} />
+                        <Image src="/img/edizioni/2026/show.webp" alt="Science Show" width={300} height={200} className={css.lineupImage} />
                         <h3 className={css.lineupName}>SCIENCE SHOW</h3>
                         <span className={css.lineupGenre}>Spettacolo di intrattenimento</span>
                         <p className={css.lineupDesc}>Inizia a scaldarti insieme al nostro staff che ti coinvolgerà con storie, battute, meme e tanto altro.</p>
                     </div>
                     <div className={css.lineupCard}>
                         {/* Placeholder DJ */}
-                        <Image src="/img/foto/eventi/homecoming25/wallpaper.webp" alt="DJ FAFU" width={300} height={200} className={css.lineupImage} />
-                        <h3 className={css.lineupName}>DJ FAFU</h3>
-                        <span className={css.lineupGenre}>Big room, house</span>
-                        <p className={css.lineupDesc}>Dj boh è un grandissimo dj di fama paesale che si esibirà sul nostro bellissimo palco mettendo un successo dietro l'altro.</p>
+                        <Image src="/img/edizioni/2026/piero.webp" alt="PIERO GIACCONE" width={1000} height={200} className={css.lineupImage} />
+                        <h3 className={css.lineupName}>PIERO GIACCONE</h3>
+                        <span className={css.lineupGenre}>DJ SET</span>
+                        <a href="https://www.instagram.com/pierogiaccone" target="_blank" rel="noopener noreferrer" className={css.igLink}>
+                            <img src="/img/icons/instagram.svg" alt="Instagram" className={css.igIcon} />
+                            <span>@pierogiaccone</span>
+                        </a>
                     </div>
                     <div className={css.lineupCard}>
                         {/* Placeholder DJ */}
                         <Image src="/img/edizioni/2026/djmiche.webp" alt="DJ MICHE" width={1000} height={200} className={css.lineupImage} />
                         <h3 className={css.lineupName}>DJ MICHE</h3>
-                        <span className={css.lineupGenre}>Big room, house</span>
-                        <p className={css.lineupDesc}>Dj boh è un grandissimo dj di fama paesale che si esibirà sul nostro bellissimo palco mettendo un successo dietro l'altro.</p>
+                        <span className={css.lineupGenre}>DJ SET</span>
+                        <a href="https://www.instagram.com/miche_701" target="_blank" rel="noopener noreferrer" className={css.igLink}>
+                            <img src="/img/icons/instagram.svg" alt="Instagram" className={css.igIcon} />
+                            <span>@miche_701</span>
+                        </a>
                     </div>
                 </div>
             </div>

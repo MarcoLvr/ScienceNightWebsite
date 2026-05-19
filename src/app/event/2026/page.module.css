@@ -382,6 +382,28 @@
     line-height: 1.4;
 }
 
+.igLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin-Light', sans-serif;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.igLink:hover {
+    opacity: 0.7;
+}
+
+.igIcon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
 /* Partners */
 .partnerHeader {
     display: flex;
