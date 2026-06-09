@@ -62,13 +62,14 @@ const jsonLd = {
 export default function Home() {
   return (
     <div>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        {/*<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />*/}
         <Header />
         <div>
             <div className={css.bannerContainer}>
                 <div className={css.bannerText}>
                     <h1 className={css.bannerTitle}>RISE FROM THE ASHES</h1>
-                    <h1 className={css.bannerCountdown}><Countdown target={new Date(Date.UTC(2026, 5,5, 16,0,0))} /></h1>
+                    <h1 className={css.thanks}>GRAZIE!</h1>
+                    {/*<h1 className={css.bannerCountdown}><Countdown target={new Date(Date.UTC(2026, 5,5, 16,0,0))} /></h1>*/}
                 </div>
                 <div className={css.bannerVideo}>
                     <iframe

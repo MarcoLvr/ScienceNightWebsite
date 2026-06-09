@@ -28,6 +28,14 @@
     margin: 0 5% 0 5%;
 }
 
+.thanks {
+    margin-top: 1rem;
+    font-family: 'Josefin-Medium', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    transition: 0.5s;
+}
+
 .bannerCountdown {
     margin-top: 1rem;
     font-family: 'KeaniaOne', sans-serif;
