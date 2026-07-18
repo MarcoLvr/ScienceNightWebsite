@@ -393,6 +393,45 @@ const editionsData: Record<string, Edition> = {
             },
         ],
     },
+    "2026": {
+        year: "2026",
+        title: "Science Night",
+        banner: "/img/story/wp_2026.webp",
+        sections: [
+            {
+                type: "intro",
+                text: "L'edizione 2026 aveva un obiettivo ben chiaro: segnare la rinascita di Science Night come evento con una nuova identità senza però dimenticare il passato.",
+            },
+            {
+                type: "text",
+                text: "Una sfida in cui in pochi stavano credendo il giorno in cui Marco Lavarini, nuovo organizzatore dell'evento, dichiarò di voler svoltare pagina e di voler iniziare a creare qualcosa che lasci un segno indelebile nel cuore delle persone. \nTutto iniziò a novembre 2025, quando Marco si mise a leggere le vecchie storie di festa scienze notando come le edizioni pre pandemia avevano un qualcosa che negli ultimi anni un po' si era andato a perdere: un'identità originale dell'evento.\nQuello fu il momento dell'illuminazione: Rise From The Ashes. Parlandone con Francesco Fusari, Emma Marcazzan e Tommaso Bellè, membri di Debug da tempo, si creò così il team orgnizzativo per Science Night 2026. Marco decise di puntare tutto sulla parte spettacolo, ideando la scenografia per il palco (cosa mai fatta in tutte le precedenti edizioni)."      },
+            {
+                type: "image-left",
+                image: "/img/story/2026/2026_2.webp",
+                imageAlt: "Festa 2026",
+                text: "Il 2026 fu anche l'anno del ritorno delle salamelle e degli shottini. I problemi però non mancarono: il budget era scarso e di sponsor non se ne trovarono. Fu grazie all'unione con i rappresentanti di Medicinamente che la festa trovò altri introiti anche dai dipartimenti dell'area di Medicina. I tempi si facevano sempre più stretti e i casini burocratici erano infiniti. Da dopo la pandemia realizzare un evento era diventato un inferno a livello burocratico.",
+            },
+            {
+                type: "text",
+                text: "Con tanta fatica e ore spese si arrivò alla settimana prima dove si presentò il problema più grave di tutti: il meteo. Infatti per il 5 giugno era prevista pioggia. Se si fosse messo a piovere, tutto si sarebbe rovinato e la festa sarebbe stata un disastro. D'altra parte se fosse stata annullata preventivamente si rischiava di perdere soldi e tempo. ",
+            },
+            {
+                type: "image-right",
+                image: "/img/story/2026/2026_1.webp",
+                imageAlt: "Festa 2026",
+                text: "Marco decise di non annullare la festa e, un po' per foturna e un po' per magia, il 5 giugno piovette solo la mattina, fino alle 9 circa. Era fatta, c'era da fare solo l'ultimo sprint per preparare tutto in tempo. \nLa festa fu un successone: dal nuovissimo spettacolo \"Science Show\" iniziale fino al dj set, i panini, il bere e gli shottini. Tuttò andò per il meglio e segnò un nuovo punto di partenza",
+            },
+            {
+                type: "text",
+                text: "Alla festa si presentò anche la Rettrice (Chiara Leardini) che si complimentò con gli organizzatori per l'evento e per la sua riuscita. La festa si concluse con un bilancio positivo e con la consapevolezza che Science Night aveva finalmente trovato la sua identità e una spinta per puntare sempre più in alto nelle successive edizioni",
+            },
+            {
+                type: "cta",
+                label: "TUTTA LA STORIA",
+                href: "/story",
+            },
+        ],
+    },
 };
 
 export default async function EditionPage({ params }: { params: Promise<{ slug: string }> }) {

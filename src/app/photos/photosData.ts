@@ -101,4 +101,11 @@ export const PHOTO_EDITIONS: PhotoEdition[] = [
         cover: PREFIX + "/thumbs/2025.webp",
         photoNumber: 835
     },
+    {
+        slug: "2026",
+        year: "2026",
+        title: "Science Night 2026",
+        cover: PREFIX + "/thumbs/2026.webp",
+        photoNumber: 671
+    },
 ];

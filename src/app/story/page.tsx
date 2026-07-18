@@ -82,6 +82,13 @@ const editions = [
         image: "/img/story/wp_2025.webp",
         slug: "2025",
     },
+    {
+        year: "2026",
+        title: "Rise From The Ashes",
+        description: "L'edizione 2026 aveva un obiettivo ben chiaro: segnare la rinascita di Science Night come evento con una nuova identità senza però dimenticare il passato",
+        image: "/img/story/wp_2026.webp",
+        slug: "2026",
+    },
 ];
 
 export default function StoryPage() {

@@ -191,7 +191,7 @@ export default function Home() {
                 <div>
                     <div>
                         <PhotosCarousel slides={[
-                            2025, 2024, 2018, 2017, 2016, 2015
+                            2026, 2025, 2024, 2019, 2018, 2017
                                 ]} />
                     </div>
                     <div className={css.photosButtonContainer}>

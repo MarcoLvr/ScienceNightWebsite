@@ -3,11 +3,11 @@ import { MetadataRoute } from 'next';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sciencenight.it';
 
 const getEditionSlugs = async () => {
-    return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2024", "2025"];
+    return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2024", "2025", "2026"];
 };
 
 const getPhotosSlugs = async () => {
-    return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2024", "2025"];
+    return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2024", "2025", "2026"];
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

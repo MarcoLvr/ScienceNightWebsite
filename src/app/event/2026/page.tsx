@@ -222,7 +222,7 @@ export default function Event2026() {
             <div className={css.section}>
                 <h2 className={css.sectionTitle} style={{textAlign: 'center'}}>Il meglio delle edizioni precedenti</h2>
                 <div style={{margin: '0 -15%'}}>
-                    <PhotosCarousel slides={[2025, 2024, 2019, 2018, 2017, 2016]} />
+                    <PhotosCarousel slides={[2026, 2025, 2024, 2019, 2018, 2017]} />
                 </div>
                 <div className={css.photosButtonContainer}>
                     <Link href="/photos" className="button-glow">
